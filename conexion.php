@@ -1,8 +1,8 @@
 <?php
 	$Host = 'mysql.hostinger.co';
-	$Username = 'u587619498_cga';
+	$Username = 'u587619498_cgapruebas';
 	$Password = 'Marce1022@';
-	$dbName = 'u587619498_cga';
+	$dbName = 'u587619498_cgapruebas';
 
 	//Crear conexion mysql
 	$conexion = new mysqli($Host, $Username, $Password, $dbName);
