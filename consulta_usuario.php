@@ -20,13 +20,18 @@
 
 		include 'consultar_mensajes.php';
 
-		if($_SESSION["enviar_formulario"]==true)
+		if(isset($_SESSION["enviar_formulario"]))
 		{
-			$id_tipo_documento=$_SESSION["id_tipo_documento"];
-			$num_doc_empleado=$_SESSION["num_doc_empleado"];
-			$fec_exp_doc_empleado=$_SESSION["fec_exp_doc_empleado"];
-			$_SESSION["enviar_formulario"]=false;
+			if($_SESSION["enviar_formulario"]==true)
+			{
+				$id_tipo_documento=$_SESSION["id_tipo_documento"];
+				$num_doc_empleado=$_SESSION["num_doc_empleado"];
+				$fec_exp_doc_empleado=$_SESSION["fec_exp_doc_empleado"];
+				$_SESSION["enviar_formulario"]=false;
+			}
 		}
+		session_unset();
+		session_destroy();
 	?>
 </head>
 <style>
