@@ -15,14 +15,6 @@
 	try
 	{
 		$conexion = new mysqli($Host, $Username, $Password, $dbName);
-		$acentos = $conexion->query("SET NAMES 'utf8'");
-		//return $conexion;
-		
-		//revisar conexion
-		if($conexion->connect_error)
-		{
-			
-		}
 	}
 	catch(exception $e)
 	{
@@ -31,7 +23,11 @@
 		$_SESSION["mensaje_error"]="No fue posible realizar la conexión a la base de datos. ".$e;
 		$_SESSION["enviar_formulario"]=true;
 		header("Location: ./");
-		//exit();
+		exit();
 	}
-	
+	finally
+	{
+		$acentos = $conexion->query("SET NAMES 'utf8'");
+		return $conexion;
+	}
 ?>
