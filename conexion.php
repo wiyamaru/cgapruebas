@@ -16,7 +16,7 @@
 	{
 		$conexion = new mysqli($Host, $Username, $Password, $dbName);
 		$acentos = $conexion->query("SET NAMES 'utf8'");
-		return $conexion;
+		//return $conexion;
 		
 		//revisar conexion
 		if($conexion->connect_error)
