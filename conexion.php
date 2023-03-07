@@ -3,7 +3,7 @@
 	$Host = '127.0.0.1';
 	
 	$Username = 'u587619498_cgapruebas';
-	$Password = 'Marce1022@';	
+	$Password = 'Marce1022@.';	
 	$dbName = 'u587619498_cgapruebas';
 
 	//Crear conexion mysql
@@ -19,5 +19,5 @@
 		header("Location: ./");
 		exit();
 	}
-	return $conexion;
+	//return $conexion;
 ?>
