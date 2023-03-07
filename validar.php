@@ -19,7 +19,7 @@
 				$_SESSION["enviar_formulario"]=true;
 				enviar_formulario();
 				header("Location: ./");				
-				exit;
+				exit();
 			}
 			else	
 			{
