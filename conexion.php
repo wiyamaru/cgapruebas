@@ -1,4 +1,9 @@
 <?php
+	if(session_id() == '') 
+	{
+		session_start();
+	}
+
 	//$Host = 'mysql.hostinger.co';
 	$Host = '127.0.0.1';
 	
