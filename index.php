@@ -44,9 +44,11 @@
 		{
 			if($_SESSION["enviar_formulario"]==true)
 			{
-				$email_usuario=$_SESSION["email_usuario"];
-				$clave_usuario=$_SESSION["clave_usuario"];
-
+				if(isset($_SESSION["email_usuario"]) and isset($_SESSION["clave_usuario"]))
+				{
+					$email_usuario=$_SESSION["email_usuario"];
+					$clave_usuario=$_SESSION["clave_usuario"];
+				}
 				$_SESSION["enviar_formulario"]=false;
 			}
 		}
