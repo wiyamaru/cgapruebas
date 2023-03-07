@@ -1,10 +1,9 @@
 <?php
-	$Host = 'mysql.hostinger.co';
-	//$Host = '127.0.0.1';
+	//$Host = 'mysql.hostinger.co';
+	$Host = '127.0.0.1';
+	
 	$Username = 'u587619498_cgapruebas';
-	//$Username = '';
 	$Password = 'Marce1022@';	
-	//$Password = '';
 	$dbName = 'u587619498_cgapruebas';
 
 	//Crear conexion mysql
