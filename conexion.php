@@ -19,5 +19,5 @@
 		header("Location: ./");
 		exit();
 	}
-	//return $conexion;
+	return $conexion;
 ?>
