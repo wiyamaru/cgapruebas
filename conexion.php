@@ -7,7 +7,7 @@
 	$dbName = 'u587619498_cgapruebas';
 
 	//Crear conexion mysql
-	$conexion = new mysqli($Host, $Username, $Password, $dbName);
+	$conexion = mysqli_connect($Host, $Username, $Password, $dbName) or die ("Conexion Fallida");
 	$acentos = $conexion->query("SET NAMES 'utf8'");
 	
 	//revisar conexion
