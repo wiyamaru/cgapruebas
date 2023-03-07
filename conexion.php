@@ -1,4 +1,9 @@
 <?php
+	if(session_id() == '') 
+	{
+		session_start();
+	}
+
 	//$Host = 'mysql.hostinger.co';
 	$Host = '127.0.0.1';
 	
@@ -26,7 +31,7 @@
 		$_SESSION["mensaje_error"]="No fue posible realizar la conexión a la base de datos. ".$e;
 		$_SESSION["enviar_formulario"]=true;
 		header("Location: ./");
-		exit();
+		//exit();
 	}
 	
 ?>
