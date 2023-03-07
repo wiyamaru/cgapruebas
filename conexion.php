@@ -8,7 +8,8 @@
 
 	//Crear conexion mysql
 	$conexion = mysqli_connect($Host, $Username, $Password, $dbName);
-	$acentos = $conexion->query("SET NAMES 'utf8'");
+	//$acentos = $conexion->query("SET NAMES 'utf8'");
+	$conexion->set_charset("utf8");
 	
 	//revisar conexion
 	if($conexion->connect_error)
