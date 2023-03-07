@@ -3,8 +3,8 @@
 	//$Host = '127.0.0.1';
 	$Username = 'u587619498_cgapruebas';
 	//$Username = 'root@';
-	//$Password = 'Marce1022@';	
-	$Password = 'root';
+	$Password = 'Marce1022@';	
+	//$Password = 'root';
 	$dbName = 'u587619498_cgapruebas';
 
 	//Crear conexion mysql
