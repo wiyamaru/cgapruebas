@@ -3,7 +3,7 @@
 	//$Host = '127.0.0.1';
 	$Username = 'u587619498_cgapruebas';
 	//$Username = 'wiyamaru@gmail.com@';
-	$Password = 'marce1022';	
+	$Password = 'Marce1022@';	
 	//$Password = 'Wiyamaru07';
 	$dbName = 'u587619498_cgapruebas';
 
