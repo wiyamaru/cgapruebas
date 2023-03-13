@@ -8,7 +8,7 @@
 	$Host = '127.0.0.1';
 	
 	$Username = 'u587619498_cgapruebas';
-	$Password = 'Marce1022@..';	
+	$Password = 'Marce1022@';	
 	$dbName = 'u587619498_cgapruebas';
 
 	try{
@@ -27,7 +27,7 @@
 		throw new Exception("Error de conexión: " . $conexion->connect_error);
 	}
 		echo "Conexión exitosa";
-	//return $conexion;
+		//return $conexion;
 	}
 	catch(Exception $e) {
   	echo $e->getMessage();
